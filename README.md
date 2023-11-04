@@ -12,8 +12,8 @@ Cette calculatrice est réalisée dans le cadre d'un exercice **JavaScript** dur
 
 ## Code :
 
-[HTML](https://github.com/cebe0210/calculator/blob/main/index.html "code html")
+[HTML](index.html "code html")
 
-[CSS](style.css)
+[CSS](style.css "Code css")
 
-[JavaScript](https://github.com/cebe0210/calculator/blob/main/index.html)
+[JavaScript](script.js "Code JavaScript")
