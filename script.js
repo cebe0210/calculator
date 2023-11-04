@@ -1,7 +1,13 @@
 let display = document.getElementById('display')
 
 function addToDisplay(value){
-    display.value += value;
+    if (typeof value === 'number'){
+        display.value += value;
+    } else {
+        value = value.replace('Math.PI', 'π');
+        display.value += value;
+
+    }   
 };
 
 function displayClear(){
@@ -10,8 +16,9 @@ function displayClear(){
 
 function result(){
     try{
-        let expression = display.value.replace('^', '**');
+        let expression = display.value.replace('^', '**').replace('π', 'Math.PI');
        display.value = eval(expression);
+       
     } catch (error){
         display.value = 'Error';
     };
@@ -40,13 +47,13 @@ function root(){
 document.addEventListener('keydown', function (event){
     const key = event.key;
 
-if (/[0-9+\-*/.()]/.test(key) || key === 'Enter' || key === 'Escape') {
+if (/[0-9+\-*/.()]/.test(key)) {
     addToDisplay(key);
-}if(key === 'Enter'){
-    result();
-    event.preventDefault();
 }
-
+if(key === 'Enter' || key === '='){
+    event.preventDefault();
+    result();
+}
 else if(key === 'c' || key === 'C'){
     displayClear();
 } 
