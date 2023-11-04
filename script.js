@@ -54,6 +54,16 @@ if(key === 'Enter' || key === '='){
     event.preventDefault();
     result();
 }
+if(key === 'Backspace' || key === 'remove'){
+    event.preventDefault();
+    remove();
+}
+if(key === 'p' || key === 'Math.PI'){
+    addToDisplay('π');
+}
+if(key === 'e' || key === '^'){
+    addToDisplay('^');
+}
 else if(key === 'c' || key === 'C'){
     displayClear();
 } 
