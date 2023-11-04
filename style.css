@@ -1,0 +1,58 @@
+body {
+    background-color: #2b061e;
+}
+h1 {
+    color: #FFA500;
+    text-align: center;
+    font-size: 50px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+.container button {
+    border-radius: 50%;
+    padding: 5px;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid snow;
+}
+.container button:active {
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+.container button:hover {
+    filter: grayscale(50%);
+}
+#display {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+    text-align: right;
+    background-color: #dddddd;
+    margin-bottom: 10px;
+    
+}
+.operator {
+    background-color: #FFA500;
+    color: snow;
+
+}
+.advanced {
+    background-color: #FF4500;
+    color: snow;
+
+}
+.number {
+    background-color: #3498db;
+}
+.result {
+    background-color: #2ECC71;
+}

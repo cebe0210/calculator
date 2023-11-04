@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Calculatrice</title>
 </head>
 <body>
+    <h1>Calculatire</h1>
     <div class="container">
         <input type="text" id="display" readonly>
         <div class="button">
-            <button onclick="addToDisplay('(')">(</button>
-            <button onclick="displayClear()">C</button>
-            <button onclick="addPourcentage('%')">%</button>
-            <button onclick="remove()">⌫</button>
-            <button onclick="addToDisplay('/')">/</button><br/>
-            <button onclick="addToDisplay(')')">)</button>
-            <button onclick="addToDisplay('7')">7</button>
-            <button onclick="addToDisplay('8')">8</button>
-            <button onclick="addToDisplay('9')">9</button>
-            <button onclick="addToDisplay('*')">X</button><br/>
-            <button onclick="addToDisplay('Math.PI')">π</button>
-            <button onclick="addToDisplay('4')">4</button>
-            <button onclick="addToDisplay('5')">5</button>
-            <button onclick="addToDisplay('6')">6</button>
-            <button onclick="addToDisplay('-')">-</button><br/>
-            <button onclick="root()">√</button>
-            <button onclick="addToDisplay('1')">1</button>
-            <button onclick="addToDisplay('2')">2</button>
-            <button onclick="addToDisplay('3')">3</button>
-            <button onclick="addToDisplay('+')">+</button><br/>
-            <button onclick="addToDisplay('**')">^</button>
-            <button onclick="addToDisplay('00')">00</button>
-            <button onclick="addToDisplay('0')">0</button>
-            <button onclick="addToDisplay(',')">,</button>
-            <button onclick="result()">=</button>            
+            <button class="advanced" onclick="addToDisplay('(')">(</button>
+            <button class="advanced" onclick="displayClear()">C</button>
+            <button class="advanced" onclick="addPourcentage('%')">%</button>
+            <button class="advanced" onclick="remove()">⌫</button>
+            <button class="operator" onclick="addToDisplay('/')">/</button><br/>
+            <button class="advanced" onclick="addToDisplay(')')">)</button>
+            <button class="number" onclick="addToDisplay('7')">7</button>
+            <button class="number" onclick="addToDisplay('8')">8</button>
+            <button class="number" onclick="addToDisplay('9')">9</button>
+            <button class="operator" onclick="addToDisplay('*')">X</button><br/>
+            <button class="advanced" onclick="addToDisplay('Math.PI')">π</button>
+            <button class="number" onclick="addToDisplay('4')">4</button>
+            <button class="number" onclick="addToDisplay('5')">5</button>
+            <button class="number" onclick="addToDisplay('6')">6</button>
+            <button class="operator" onclick="addToDisplay('-')">-</button><br/>
+            <button class="advanced" onclick="root()">√²</button>
+            <button class="number" onclick="addToDisplay('1')">1</button>
+            <button class="number" onclick="addToDisplay('2')">2</button>
+            <button class="number" onclick="addToDisplay('3')">3</button>
+            <button class="operator" onclick="addToDisplay('+')">+</button><br/>
+            <button class="advanced" onclick="addToDisplay('**')">^</button>
+            <button class="number" onclick="addToDisplay('00')">00</button>
+            <button class="number" onclick="addToDisplay('0')">0</button>
+            <button class="number" onclick="addToDisplay(',')">,</button>
+            <button class="result" onclick="result()">=</button>            
             
         </div>
     </div>
