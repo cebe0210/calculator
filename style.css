@@ -1,4 +1,68 @@
-body {
+@media  screen and (max-width: 768px) {
+    body {
+        background-color: #2b061e;
+    }
+    h1 {
+        color: #FFA500;
+        text-align: center;
+        font-size: 50px;
+    }
+    .Calculatrice {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto;
+    }
+    .Calculatrice button {
+        border-radius: 50%;
+        padding: 5px;
+        margin: 3px;
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+        font-weight: bold;
+        border: 1px solid snow;
+    }
+    .Calculatrice button:active {
+        transform: scale(0.9);
+        transition: transform 0.3s;
+    }
+    .Calculatrice button:hover {
+        filter: grayscale(50%);
+    }
+    #display {
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 5px;
+        text-align: right;
+        background-color: #dddddd;
+        margin-bottom: 10px;
+        width: 250px;
+        height: 30px;
+        
+    }
+    .operator {
+        background-color: #FFA500;
+        color: snow;
+    
+    }
+    .advanced {
+        background-color: #FF4500;
+        color: snow;
+    
+    }
+    .number {
+        background-color: #3498db;
+    }
+    .result {
+        background-color: #2ECC71;
+    }
+}
+
+@media screen and (min-width: 769px) {
+  body {
     background-color: #2b061e;
 }
 h1 {
@@ -6,7 +70,7 @@ h1 {
     text-align: center;
     font-size: 50px;
 }
-.container {
+.Calculatrice {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -14,7 +78,7 @@ h1 {
     height: 100vh;
     margin: auto;
 }
-.container button {
+.Calculatrice button {
     border-radius: 50%;
     padding: 5px;
     margin: 3px;
@@ -24,11 +88,11 @@ h1 {
     font-weight: bold;
     border: 1px solid snow;
 }
-.container button:active {
+.Calculatrice button:active {
     transform: scale(0.9);
     transition: transform 0.3s;
 }
-.container button:hover {
+.Calculatrice button:hover {
     filter: grayscale(50%);
 }
 #display {
@@ -55,4 +119,6 @@ h1 {
 }
 .result {
     background-color: #2ECC71;
+}  
 }
+
